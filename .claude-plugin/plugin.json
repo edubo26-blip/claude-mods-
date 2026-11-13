@@ -1,0 +1,23 @@
+{
+  "name": "aviso-cache-fria",
+  "version": "0.1.0",
+  "description": "Avisa con cuenta atrás cuando la caché del prompt está por enfriarse o ya se enfrió.",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "ttl": {
+      "type": "string",
+      "title": "Duración de la caché",
+      "description": "Cuánto dura la caché del prompt sin actividad (5m estándar, 1h extendida).",
+      "default": "5m",
+      "options": ["5m", "1h"]
+    },
+    "avisoAntes": {
+      "type": "string",
+      "title": "Avisar antes (segundos)",
+      "description": "Cuántos segundos antes de enfriarse llega el primer aviso.",
+      "default": "60",
+      "options": ["30", "60", "120", "300"]
+    }
+  }
+}

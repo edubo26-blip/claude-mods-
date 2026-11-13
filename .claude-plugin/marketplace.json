@@ -1,0 +1,13 @@
+{
+  "name": "jvt-nodux-mods",
+  "owner": {
+    "name": "JVT NODUX"
+  },
+  "plugins": [
+    {
+      "name": "aviso-cache-fria",
+      "source": "./"
+    }
+  ],
+  "description": "Mods de Claude Code de JVT NODUX."
+}
